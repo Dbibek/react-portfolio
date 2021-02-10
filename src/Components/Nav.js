@@ -6,27 +6,27 @@ const NavBar = () => {
   return (
     <>
       <Navbar
-        bg="primary"
-        expand="lg"
+        bg="success"
+       
+        expand="sm"
         sticky="top"
-        className="d-flex justify-content-between"
+        className="d-flex justify-content-between "
       >
-        <div class="container-fluid">
+        <div className="container-fluid">
           <Navbar.Brand href="#home">
-            <img src={Logo} alt="logo" style={{ width: "8rem" }} />
+            <img
+              src={Logo}
+              alt="logo"
+              className="d-inline-block align-top"
+              style={{ width: "8rem" }}
+            />
           </Navbar.Brand>
 
           <Nav
-            className="d-flex "
-            style={{ fontSize: "1.3rem", color: "black", fontWeight: "600" }}
+            className="d-flex"
+            style={{ fontSize: "1.3rem", fontWeight: "600" }}
           >
-            <Nav.Link
-              href="#home"
-            
-              
-            >
-              Home
-            </Nav.Link>
+            <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#about">About</Nav.Link>
             <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>
